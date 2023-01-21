@@ -21,6 +21,8 @@ const Recently = () => {
   }, [pages]);
 
   return (
+    <>
+    <br/> <br/> <br/>
   <Layout>
       <Container
         Data={data.results}
@@ -29,6 +31,7 @@ const Recently = () => {
         Icon={Discover[0].icon}
       />
     </Layout>
+    </>
   );
 };
 
