@@ -23,7 +23,7 @@ const Recently = () => {
   return (
     <>
     <br/> <br/> <br/>
-  <Layout>
+    <br/><br/><br/>  <Layout>
       <Container
         Data={data.results}
         heading={"Recently Added"}
