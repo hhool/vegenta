@@ -17,7 +17,7 @@ const PageButton = ({ href, children, style }) => {
     <Link href={href}>
       <PB
         button={theme.button}
-        className={`${style} ${theme.button.background} border ${theme.button.text} ${theme.button.border} p-2 px-4  items-center border rounded-full cursor-pointer shadow-2xl transition-all duration-500`}
+        className={`${style} ${theme.button.background} border ${theme.button.text} ${theme.button.border} p-2 px-4 flex justify-center items-center border rounded-full cursor-pointer shadow-2xl transition-all duration-500`}
       >
         {children}
       </PB>

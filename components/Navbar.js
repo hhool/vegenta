@@ -12,7 +12,7 @@ function Navbar() {
 				<div className="w-full">
 					<div className="flex items-center h-20 w-full">
 						<div className="flex items-center  mx-20  justify-between w-full">
-							<div className=" items-center flex-shrink-0 ">
+							<div className="flex justify-center items-center flex-shrink-0 ">
 								<h1 className=" font-bold text-xl cursor-pointer">
 									<span className="text-blue-500"></span>
 								</h1>

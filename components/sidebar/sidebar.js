@@ -23,7 +23,7 @@ const Sidebar = ({ visit }) => {
           show={show}
         />
 
-        <div id="sidemenu" className="  relative  w-full ">
+        <div id="sidemenu" className=" flex justify-center relative  w-full ">
           <Link href="/recentlyadded/1">
             <div
               className={`${theme.text.selected} lg:hidden absolute cursor-pointer`}
