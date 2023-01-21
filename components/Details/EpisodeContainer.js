@@ -48,7 +48,7 @@ const EpisodeContainer = ({ title, id, number, image }) => {
                     alt={id}
                   />
                 </div>
-                <span className="w-2/3 flex justify-center items-center text-center h-full">
+                <span className="w-2/3  items-center text-center h-full">
                   Ep -<span className={"font-semibold"}>{index}</span>
                 </span>
               </EpButton>

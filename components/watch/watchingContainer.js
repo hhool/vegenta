@@ -90,7 +90,7 @@ const WatchingContainer = ({ data = [], slug }) => {
   return loading ? (
     <Loader />
   ) : (
-    <div className="relative lg:h-1/3  flex justify-center items-center text-left flex-col h-screen w-full px-2 ">
+    <div className="relative lg:h-1/3   items-center text-left flex-col h-screen w-full px-2 ">
       <div
         className={` flex flex-col pb-2 xl:w-player justify-between items-center w-full ${theme.text.selected}   my-4`}
       >
@@ -157,7 +157,7 @@ const WatchingContainer = ({ data = [], slug }) => {
                 <PlayBack
                   button={theme.detailsButton}
                   key={Item.id}
-                  className={`shadow-2xl transition-all duration-500 my-4 lg:my-1 mx-2 p-1 flex justify-center items-center w-10 h-10 rounded-full cursor-pointer text-sm`}
+                  className={`shadow-2xl transition-all duration-500 my-4 lg:my-1 mx-2 p-1  items-center w-10 h-10 rounded-full cursor-pointer text-sm`}
                   onClick={() => handleClick(Item.rate)}
                   active={Myref.current?.playbackRate == Item.rate}
                 >

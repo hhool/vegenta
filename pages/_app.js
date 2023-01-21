@@ -133,9 +133,8 @@ const App = ({ Component, pageProps }) => {
           content="Watching,Popular,Streaming,Free,Fast,1080p,"
         />
       </Head>
-
+      <Navbar visit={visit} />
       <div className="">
-        <Navbar visit={visit} />
         <Component {...pageProps} />
       </div>
       <ToastContainer
