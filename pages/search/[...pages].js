@@ -21,6 +21,8 @@ const Search = () => {
   }, [pages]);
 
   return (
+    <>
+    <br/><br/><br/><br/>
     <Layout title={pages?.[0]}>
       <Container
         Data={data.results}
@@ -29,6 +31,7 @@ const Search = () => {
         Icon={FaSearch}
       />
     </Layout>
+    </>
   );
 };
 

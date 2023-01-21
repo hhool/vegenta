@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import countapi from "countapi-js";
 import Navbar from "../components/Navbar"
+import Footer from '../components/Footer'
 
 const Msg = ({ resumeId }) => {
   return (
@@ -146,6 +147,7 @@ const App = ({ Component, pageProps }) => {
         transition={Flip}
         draggablePercent={30}
       />
+      <Footer/>
     </div>
   );
 };
