@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 import axios from "axios";
 import cheerio from "cheerio";
 import Link from "next/link";
-
 import { useRouter } from "next/router";
 
 const Search = ({visit}) => {
