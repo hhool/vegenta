@@ -139,7 +139,7 @@ const App = ({ Component, pageProps }) => {
         <Component {...pageProps} />
       </div>
       <ToastContainer
-        position={"top-center"}
+        position={"middle-center"}
         onClick={() =>
           router.push(`/watching/${resumeId.data[0]}/${resumeId.data[1]}`)
         }

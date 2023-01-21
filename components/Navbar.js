@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Search from '../components/sidebar/search'
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
+import  Toogle  from '../components/nav/Toggle'
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +14,15 @@ function Navbar() {
 						<div className="flex items-center  mx-20  justify-between w-full">
 							<div className="flex justify-center items-center flex-shrink-0 ">
 								<h1 className=" font-bold text-xl cursor-pointer">
-									Veg<span className="text-blue-500">enta</span>
+									<span className="text-blue-500"></span>
 								</h1>
 							</div>
+							<Search className="pl-65"/>
 							<div className="hidden md:block">
+
 								<div className="ml-10 flex items-baseline space-x-4">
 									<Link
+										href="/recentlyadded/1"
 										activeClass="Home"
 										to="about"
 										smooth={true}
@@ -26,38 +30,31 @@ function Navbar() {
 										duration={500}
 										className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
 									>
-										Home
+										🗓️ Recently Added
 									</Link>
 									<Link
-										activeClass="about"
+										href="/myList"
+										activeClass="Home"
 										to="about"
 										smooth={true}
 										offset={50}
 										duration={500}
-										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+										className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
 									>
-										About
+										❤️ My List
 									</Link>
 									<Link
-										activeClass="work"
-										to="work"
+										href="/popular/1"
+										activeClass="Home"
+										to="about"
 										smooth={true}
 										offset={50}
 										duration={500}
-										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+										className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
 									>
-										Popular
-									</Link>
-									<Link
-										activeClass="Services"
-										to="work"
-										smooth={true}
-										offset={50}
-										duration={500}
-										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-									>
-										Visits:
-									</Link>
+										⭐ Popular
+									</Link>	
+									<Toogle/>													
 								</div>
 							</div>
 						</div>
@@ -132,7 +129,7 @@ function Navbar() {
 									duration={500}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
-									My List
+									❤️ My List
 								</Link>
 								<Link
 									href="/recentlyadded/1"
@@ -143,7 +140,7 @@ function Navbar() {
 									duration={500}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
-									Recently Added
+									🗓️ Recently Added
 								</Link>
 
 								<Link
@@ -155,20 +152,9 @@ function Navbar() {
 									duration={500}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
-									Popular
+									⭐ Popular
 								</Link>
-								<Link
-									href="/"
-									activeClass="services"
-									to="services"
-									smooth={true}
-									offset={50}
-									duration={500}
-									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-								>
-									Visits:
-								</Link>
-								<Search/>
+								<Toogle/>
 							</div>
 						</div>
 					)}
