@@ -19,9 +19,12 @@ const Details = () => {
   }, [id]);
 
   return (
+    <>
+    <br/><br/><br/><br/>
     <Layout title={data.results?.[0].title}>
       {data.results && <DetailsContainer id={id} data={data.results[0]} />}
     </Layout>
+    </>
   );
 };
 
