@@ -147,7 +147,6 @@ const App = ({ Component, pageProps }) => {
         transition={Flip}
         draggablePercent={30}
       />
-      <Footer/>
     </div>
   );
 };

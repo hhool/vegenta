@@ -25,6 +25,9 @@ const Recently = () => {
     <Layout title={"Watching " + slug?.[0]}>
       {slug && <WatchingContainer data={data} slug={slug} />}
     </Layout>
+    <br/>
+    <br/>
+    <br/>
     </>
   );
 };

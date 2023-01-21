@@ -31,6 +31,9 @@ const Recently = () => {
         Icon={Discover[0].icon}
       />
     </Layout>
+    <br/>
+    <br/>
+    <br/>
     </>
   );
 };

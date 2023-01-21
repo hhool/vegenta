@@ -31,6 +31,9 @@ const Search = () => {
         Icon={FaSearch}
       />
     </Layout>
+    <br/>
+    <br/>
+    <br/>
     </>
   );
 };

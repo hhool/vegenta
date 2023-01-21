@@ -26,6 +26,9 @@ const Popular = () => {
     <Layout title={"Popular"}>
       <Container Data={data.results} heading={"Popular"} Icon={Discover[1].icon} page={[pages]} />
     </Layout>
+    <br/>
+    <br/>
+    <br/>
     </>
   );
 };
