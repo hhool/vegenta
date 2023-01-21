@@ -23,7 +23,7 @@ function Navbar() {
 								<div className="ml-10 flex items-baseline space-x-4">
 									<Link
 										href="/recentlyadded/1"
-										activeClass="Home"
+										activeClass="about"
 										to="about"
 										smooth={true}
 										offset={50}
@@ -34,8 +34,8 @@ function Navbar() {
 									</Link>
 									<Link
 										href="/myList"
-										activeClass="Home"
-										to="about"
+										activeClass="services"
+										to="services"
 										smooth={true}
 										offset={50}
 										duration={500}
@@ -45,8 +45,8 @@ function Navbar() {
 									</Link>
 									<Link
 										href="/popular/1"
-										activeClass="Home"
-										to="about"
+										activeClass="work"
+										to="work"
 										smooth={true}
 										offset={50}
 										duration={500}
@@ -122,8 +122,8 @@ function Navbar() {
 							>
 								<Link
 									href="/myList"
-									activeClass="home"
-									to="home"
+									activeClass="services"
+									to="services"
 									smooth={true}
 									offset={50}
 									duration={500}
