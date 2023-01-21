@@ -9,9 +9,9 @@ function Container({ Data = [], heading, page, Icon }) {
     <Loader />
   ) : Data.length > 0 ? (
     <>
-      <div className="mt-28 lg:mt-0">
+      <div className="mt-28 lg:mt-0 flex">
         <span
-          className={`${theme.text.selected} px-8 flex  font-light items-center  text-3xl`}
+          className={`${theme.text.selected} px-8 flex font-light items-center  text-3xl`}
         >
           {Icon ? (
             <Icon
