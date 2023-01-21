@@ -72,7 +72,7 @@ const Loader = () => {
   const theme = useSelector((state) => state.theme);
   return (
     <div
-      className={`w-full relative overflow-hidden h-screen flex justify-center items-center ${theme.text.selected} `}
+      className={`w-full relative h-screen items-center ${theme.text.selected} `}
     >
       <Loading {...theme} />
     </div>

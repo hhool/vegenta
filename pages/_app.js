@@ -134,7 +134,7 @@ const App = ({ Component, pageProps }) => {
         />
       </Head>
 
-      <div className="flex justify-between">
+      <div className="">
         <Navbar visit={visit} />
         <Component {...pageProps} />
       </div>
