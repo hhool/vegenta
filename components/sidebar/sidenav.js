@@ -1,5 +1,5 @@
 import NavContainer from "../nav/nav_container/navcontainer";
-import { Discover, Genre } from "../../utils/data";
+import { Discover } from "../../utils/data";
 import Toggle from "../nav/Toggle";
 import { useSelector } from "react-redux";
 import { AiOutlineCloseCircle } from "react-icons/ai";
@@ -35,9 +35,7 @@ const Sidenav = ({ onClick, show, visit }) => {
             className={` cursor-pointer  rounded-full p-1  `}
           />
         </div>
-
         <NavContainer links={Discover} heading={"Discover"} />
-        <NavContainer links={Genre} heading={"Genres"} />
         <span
           className={`${theme.text.notselected} text-lg pb-10 px-4 w-full justify-start  flex items-center `}
         >

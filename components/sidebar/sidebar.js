@@ -44,7 +44,7 @@ const Sidebar = ({ visit }) => {
             }}
             className={`${theme.button.background} cursor-pointer ${theme.button.text} absolute left-0 rounded-full p-1 lg:hidden `}
           />
-          <Search />
+          <Search visit={visit} />
         </div>
       </div>
     </>

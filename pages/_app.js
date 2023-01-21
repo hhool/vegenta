@@ -1,4 +1,4 @@
-import Navbar from "../components/nav/Navbar";
+
 import "../styles/globals.css";
 import { PersistGate } from "redux-persist/integration/react";
 import { Store, Persistor } from "../redux/store";
@@ -11,6 +11,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import countapi from "countapi-js";
+import Navbar from "../components/Navbar"
+
 const Msg = ({ resumeId }) => {
   return (
     <div className="flex flex-col">
@@ -31,7 +33,6 @@ const App = ({ Component, pageProps }) => {
   const router = useRouter();
   useEffect(() => {
     console.log(
-      "%c Animex.ninja! ",
       "background: #222; color:#4198db ;font-size:50px"
     );
     localStorage.removeItem("persist:root");
@@ -132,7 +133,7 @@ const App = ({ Component, pageProps }) => {
           content="Watching,Popular,Streaming,Free,Fast,1080p,"
         />
       </Head>
-      <Sidebar visit={visit} />
+
       <div className="flex justify-between">
         <Navbar visit={visit} />
         <Component {...pageProps} />
