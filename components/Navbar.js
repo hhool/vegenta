@@ -28,7 +28,7 @@ function Navbar() {
 										smooth={true}
 										offset={50}
 										duration={500}
-										className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
+										className="cursor-pointer hover:bg-blue-600 text-blue hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 									>
 										🗓️ Recently Added
 									</Link>
@@ -39,7 +39,7 @@ function Navbar() {
 										smooth={true}
 										offset={50}
 										duration={500}
-										className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
+										className="cursor-pointer hover:bg-blue-600 text-blue hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 									>
 										❤️ My List
 									</Link>
@@ -50,7 +50,7 @@ function Navbar() {
 										smooth={true}
 										offset={50}
 										duration={500}
-										className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
+										className="cursor-pointer hover:bg-blue-600 text-blue hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 									>
 										⭐ Popular
 									</Link>	
