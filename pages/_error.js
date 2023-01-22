@@ -7,9 +7,11 @@ const Error = () => {
     <><br/>
     <br/>
     <br/><br/>
+    <center>
     <Layout title={"Error"}>
       <Emessage />
     </Layout>
+    </center>
     </>
   );
 };

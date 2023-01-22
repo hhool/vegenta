@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import Search from '../components/sidebar/search'
 import { Transition } from "@headlessui/react";
-import { Link } from "react-scroll";
 import  Toogle  from '../components/nav/Toggle'
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
+	const theme = useSelector((state) => state.theme);
 	return (
 		<div>
 			<nav className=" shadow-sm fixed w-full z-10">
@@ -18,42 +19,32 @@ function Navbar() {
 								</h1>
 							</div>
 							<Search className="pl-65"/>
+							<div className="flex justify-left items-left flex-shrink-0 ">
+								<h1 className={`${theme.text.selected} font-bold text-xl cursor-pointer`}>
+									Veg<span className="text-blue-500">enta</span>
+								</h1>
+							</div>
 							<div className="hidden md:block">
 								<div className="ml-10 flex items-baseline space-x-4">
-									<Link
-										href="/recentlyadded/1"
-										activeClass="about"
-										to="about"
-										smooth={true}
-										offset={50}
-										duration={500}
-										className="cursor-pointer hover:bg-blue-600 text-blue hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+									<a 
+										href="/recentlyadded/1" 
+										class={`${theme.text.selected} block py-2 pl-3 pr-4 text-white-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
 									>
-										🗓️ Recently Added
-									</Link>
-									<Link
-										href="/myList"
-										activeClass="services"
-										to="services"
-										smooth={true}
-										offset={50}
-										duration={500}
-										className="cursor-pointer hover:bg-blue-600 text-blue hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+									🗓️ Recently Added
+									</a>
+									<a 
+										href="/myList" 
+										class={`${theme.text.selected} block py-2 pl-3 pr-4 text-white-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
 									>
-										❤️ My List
-									</Link>
-									<Link
-										href="/popular/1"
-										activeClass="work"
-										to="work"
-										smooth={true}
-										offset={50}
-										duration={500}
-										className="cursor-pointer hover:bg-blue-600 text-blue hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+									❤️ My List
+									</a>
+									<a 
+										href="/popular/1" 
+										class={`${theme.text.selected} block py-2 pl-3 pr-4 text-white-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
 									>
-										⭐ Popular
-									</Link>	
-									<Toogle/>													
+									⭐ Popular
+									</a>
+									<Toogle/>
 								</div>
 							</div>
 						</div>
@@ -117,43 +108,27 @@ function Navbar() {
 						<div className="md:hidden" id="mobile-menu">
 							<div
 								ref={ref}
-								className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
+								className={`bg-${theme.button.background} px-2 pt-2 pb-3 space-y-1 sm:px-3`}
 							>
-								<Link
-									href="/myList"
-									activeClass="services"
-									to="services"
-									smooth={true}
-									offset={50}
-									duration={500}
-									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-								>
-									❤️ My List
-								</Link>
-								<Link
-									href="/recentlyadded/1"
-									activeClass="about"
-									to="about"
-									smooth={true}
-									offset={50}
-									duration={500}
-									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-								>
+								<a 
+										href="/recentlyadded/1" 
+										class={`${theme.text.selected} block py-2 pl-3 pr-4 text-white-700 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
+									>
 									🗓️ Recently Added
-								</Link>
-
-								<Link
-									href="/popular/1"
-									activeClass="work"
-									to="work"
-									smooth={true}
-									offset={50}
-									duration={500}
-									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-								>
+									</a>
+									<a 
+										href="/myList" 
+										class={`${theme.text.selected} block py-2 pl-3 pr-4 text-white-700 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
+									>
+									❤️ My List
+									</a>
+									<a 
+										href="/popular/1" 
+										class={`${theme.text.selected} block py-2 pl-3 pr-4 text-white-700 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
+									>
 									⭐ Popular
-								</Link>
-								<Toogle/>
+									</a>
+									<Toogle/>
 							</div>
 						</div>
 					)}
