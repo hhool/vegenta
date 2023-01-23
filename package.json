@@ -1,6 +1,6 @@
 {
-  "name": "next-animex",
-  "version": "0.1.0",
+  "name": "vegenta",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "next build",
