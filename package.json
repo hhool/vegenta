@@ -10,9 +10,9 @@
   "dependencies": {
     "@headlessui/react": "^1.7.7",
     "@svgr/webpack": "^5.5.0",
-    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "autoprefixer": "^10.2.3",
-    "axios": "^0.21.1",
+    "axios": "^1.2.3",
     "cheerio": "^1.0.0-rc.5",
     "countapi-js": "^1.0.2",
     "lottie-react-web": "^2.2.2",
@@ -23,7 +23,7 @@
     "react-dark-mode-toggle": "0.0.10",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
-    "react-redux": "^7.2.2",
+    "react-redux": "^8.0.5",
     "react-scroll": "^1.8.9",
     "react-toastify": "^7.0.3",
     "redux": "^4.0.5",
@@ -33,7 +33,7 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
-    "babel-plugin-macros": "^3.0.1",
+    "babel-plugin-macros": "^3.1.0",
     "babel-plugin-styled-components": "^1.12.0",
     "postcss-flexbugs-fixes": "^5.0.1",
     "postcss-import": "^13.0.0",
