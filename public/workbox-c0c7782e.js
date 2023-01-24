@@ -787,7 +787,7 @@ define("./workbox-c0c7782e.js",['exports'], function (exports) { 'use strict';
        *     urlsToCache: [
        *       './script1.js',
        *       './script2.js',
-       *       ['./script3.js', {mode: 'no-cors'}],
+       *       ['./script3.js',],
        *     ],
        *   },
        * }
