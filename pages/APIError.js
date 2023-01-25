@@ -1,4 +1,23 @@
+
 import React from "react";
+
+const help = () => {
+  return (
+    <>
+    <br/><br/><br/><br/>
+    <div id="coverlight" style="z-index:8"></div>
+      <div class="middle" style="width: 100%; max-width: 700px; font-size:14px; margin-top: 35px; padding: 10px;">
+          <div class="leftside" style="margin-left: -10px;">
+              <img src="./vegenta.png" style="max-width:200px;margin-top:50px;" />
+              <div style="font-size: 22px;">Visit <a href="https://vegenta.vercel.app/recentlyadded/1">Here</a>
+              </div>
+        </div>
+        </div>
+    </>
+  );
+};
+
+export default help;
 
 const APIError = ()  => {
     return (
@@ -47,4 +66,3 @@ const APIError = ()  => {
     );
   };
   
-  export default APIError;
