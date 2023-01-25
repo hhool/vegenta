@@ -1,4 +1,4 @@
-
+import React from "react";
 
 const APIError = ()  => {
     return (
@@ -45,6 +45,6 @@ const APIError = ()  => {
       </div>
   </>
     );
-  }
+  };
   
   export default APIError;
