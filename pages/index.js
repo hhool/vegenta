@@ -8,7 +8,7 @@ export default function Home() {
   const router = useRouter();
   const { data } = useSelector((state) => state);
   useEffect(() => {
-    router.push("/recentlyadded/1");
+    router.push("/APIError");
   }, []);
   return (
     <Layout>
