@@ -27,7 +27,7 @@ const Msg = ({ resumeId }) => {
   );
 };
 
-const App = ({ Component, pageProps }) => {
+ const App = ({ Component, pageProps }) => {
   const [visit, setVisit] = useState(0);
   const { theme, resumeId } = useSelector((state) => state);
   const router = useRouter();
@@ -36,6 +36,7 @@ const App = ({ Component, pageProps }) => {
       "background: #222; color:#4198db ;font-size:50px"
     );
     localStorage.removeItem("persist:root");
+    toast.info(<Msg resumeId={resumeId.data} />);
     if (resumeId) if (resumeId) toast.info(<Msg resumeId={resumeId.data} />);
     countapi.update("animex.ninja", process.env.key, 1).then((result) => {
       setVisit(result.value);
