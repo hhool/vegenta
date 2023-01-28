@@ -37,6 +37,7 @@ const Msg = ({ resumeId }) => {
     );
     localStorage.removeItem("persist:root");
     toast.info(<Msg resumeId={resumeId.data} />);
+    console.log('Sent Toast')
     if (resumeId) if (resumeId) toast.info(<Msg resumeId={resumeId.data} />);
     countapi.update("animex.ninja", process.env.key, 1).then((result) => {
       setVisit(result.value);
