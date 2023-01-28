@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import countapi from "countapi-js";
 import Navbar from "../components/Navbar"
-const resumeId=[0]
+
 const Msg = ({ resumeId }) => {
   return (
     <div className="flex flex-col">
@@ -36,8 +36,6 @@ const Msg = ({ resumeId }) => {
       "background: #222; color:#4198db ;font-size:50px"
     );
     localStorage.removeItem("persist:root");
-    toast.info(<Msg resumeId={resumeId.data} />);
-    console.log('Sent Toast')
     if (resumeId) if (resumeId) toast.info(<Msg resumeId={resumeId.data} />);
     countapi.update("animex.ninja", process.env.key, 1).then((result) => {
       setVisit(result.value);
