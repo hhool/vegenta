@@ -12,13 +12,13 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import countapi from "countapi-js";
 import Navbar from "../components/Navbar"
-
+const resumeId=[0]
 const Msg = ({ resumeId }) => {
   return (
     <div className="flex flex-col">
       <span>You were watching</span>
       <span className={"uppercase font-bold text-xl"}>
-        {resumeId[0]?.split("-").join(" ")}
+        {resumeId?.[0]?.split("-").join(" ")}
       </span>
       <span>
         To Continue Press <span className="text-yellow-300 text-xl ">here</span>
@@ -36,6 +36,7 @@ const Msg = ({ resumeId }) => {
       "background: #222; color:#4198db ;font-size:50px"
     );
     localStorage.removeItem("persist:root");
+    toast.info(<Msg resumeId={resumeId.data} />);
     if (resumeId) if (resumeId) toast.info(<Msg resumeId={resumeId.data} />);
     countapi.update("animex.ninja", process.env.key, 1).then((result) => {
       setVisit(result.value);
