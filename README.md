@@ -1,3 +1,7 @@
+```
+💀 Website needs constant support, Hence decided to abandon it 💀
+```
+
 Uses Node.js Version `16.0.0`
 # Anime Web App with Nextjs.
 An Ad Free Anime Streaming web app to give you a better experience. Check it live here: [vegenta.vercel.app](https://vegenta.vercel.app)
