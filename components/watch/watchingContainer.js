@@ -142,7 +142,7 @@ const WatchingContainer = ({ data = [], slug }) => {
       <div className="flex w-full justify-center items-center flex-col-reverse lg:flex-row">
         {iframe ? (
           <iframe
-            src={link}
+            src={data}
             className=" max-w-full lg:max-w-screen-lg"
             sandbox
             width={1024}
