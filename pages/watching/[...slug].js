@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Layout from "../../components/Layout";
 import WatchingContainer from "../../components/watch/watchingContainer";
-import { asyncDataAction } from "../../redux/actions/asyncDataAction";
+import { watchingDataAction } from "../../redux/actions/watchingDataAction";
 
 import { URL } from "../../utils/URLS";
 const Recently = () => {
@@ -15,7 +15,7 @@ const Recently = () => {
   useEffect(() => {
     if (slug) {
       var WatchingURL = URL.EPLINK + slug[0] + "-episode-" + slug[1];
-      dispatch(asyncDataAction(WatchingURL));
+      dispatch(watchingDataAction(WatchingURL));
     }
   }, [slug]);
 
