@@ -168,7 +168,7 @@ const WatchingContainer = ({ data = [], slug }) => {
             </div>
 
             <video
-              src={link}
+              src={data}
               width="1024"
               autoPlay
               height="576"
