@@ -7,7 +7,7 @@ const recieveData = (payload) => {
   return { type: MyAction.RECEIVE, payload: payload };
 };
 
-export const asyncDataAction = (URL) => {
+export const watchingDataAction = (URL) => {
   return async function (dispatch) {
     dispatch(fetchData());
     console.log(URL);
