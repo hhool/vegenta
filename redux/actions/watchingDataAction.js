@@ -15,7 +15,7 @@ export const asyncDataAction = (URL) => {
     const res = await response.json();
     const gogoServer = response.data[1];
     console.log(gogoServer.name);
-    const result = gogoServer.url);
+    const result = gogoServer.url;
     dispatch(recieveData(result));
   };
 };
