@@ -1,6 +1,6 @@
 export const URL = {
   POPULAR: "https://tes-henna.vercel.app/api/popular/",
-  RECENT: "https://animetize-api.vercel.app/anime/gogoanime/recent-episodes/",
+  RECENT: "https://animetize-api.vercel.app/anime/gogoanime/recent-episodes?page=",
   DETAILS: "https://tes-henna.vercel.app/api/details/",
   EPLINK: "https://tes-henna.vercel.app/api/watching/",
   GENRES: "https://tes-henna.vercel.app/api/genre/",
