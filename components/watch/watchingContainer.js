@@ -55,10 +55,24 @@ const WatchingContainer = ({ data = [], slug }) => {
   const [myList, setMyList] = useState([]);
   const [iframe, setIframe] = useState(false);
   const dispatch = useDispatch();
+  
   useEffect(() => {
     if (data.links?.length > 0) {
-      setMyList([...data.links]);
-      setLink(data.links[0].src);
+fetch("https://animetize-api.vercel.app/anime/gogoanime/servers/one-piece-episode-1")
+  .then((res) => {
+    if (!res.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return res.json();
+  })
+  .then((data) => {
+    // Access the second object in the array (index 1)
+    const gogoServer = data[1];
+    const url =gogoServer.url
+setLink(url);
+  })
+
+      
 
       if (
         Myref.current &&
