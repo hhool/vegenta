@@ -1,10 +1,10 @@
 export const URL = {
   POPULAR: "https://animetize-api.vercel.app/anime/gogoanime/top-airing?page=", //fixed
   RECENT: "https://animetize-api.vercel.app/anime/gogoanime/recent-episodes?page=", //fixed
-  DETAILS: "https://tes-henna.vercel.app/api/details/",
-  EPLINK: "https://tes-henna.vercel.app/api/watching/",
+  DETAILS: "https://tes-henna.vercel.app/api/details/", //fixed
+  EPLINK: "https://animetize-api.vercel.app/anime/gogoanime/servers/",
   GENRES: "https://tes-henna.vercel.app/api/genre/",
-  SEARCH: "https://animetize-api.vercel.app/anime/gogoanime/",
+  SEARCH: "https://tes-henna.vercel.app/api/search/",
 };
 /**
 export const URL = {
