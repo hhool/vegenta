@@ -56,10 +56,10 @@ const WatchingContainer = ({ data = [], slug }) => {
   const [iframe, setIframe] = useState(false);
   const dispatch = useDispatch();
   useEffect(() => {
-    console.log(data)
+
     if (data.links?.length > 0) {
       setMyList([...data.links]);
-      setLink(data.links[0].src);
+      setLink(data);
 
       if (
         Myref.current &&
