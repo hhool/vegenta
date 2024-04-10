@@ -1,8 +1,8 @@
 export const URL = {
-  POPULAR: process.env.URL + "popular/",
-  RECENT: process.env.URL + "recentlyadded/",
-  DETAILS: process.env.URL + "details/",
-  EPLINK: process.env.URL + "watching/",
-  GENRES: process.env.URL + "genre/",
-  SEARCH: process.env.URL + "search/",
+  POPULAR: "https://tes-henna.vercel.app/api/popular/",
+  RECENT: "https://tes-henna.vercel.app/api/recentlyadded/",
+  DETAILS: "https://tes-henna.vercel.app/api/details/",
+  EPLINK: "https://tes-henna.vercel.app/api/watching/",
+  GENRES: "https://tes-henna.vercel.app/api/genre/",
+  SEARCH: "https://tes-henna.vercel.app/api/search/",
 };
