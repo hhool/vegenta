@@ -15,15 +15,9 @@ export const watchingDataAction = (URL) => {
       const response = await fetch(URL);
       const res = await response.json();
       const gogoServer = res[1]; // accessing the second object in the array
-      if (!gogoServer) {
-        console.log("not existing")
-        const res = "not existing"
-        dispatch(receiveData(res));
-      }
-      else {
-        const result = gogoServer.url;
-        dispatch(receiveData(result));
-      }
+      console.log(gogoServer.url)
+      const result = gogoServer.url;
+      dispatch(receiveData(result));
     } catch (error) {
       // handle errors
       console.error('Error fetching data:', error);

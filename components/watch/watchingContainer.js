@@ -52,7 +52,6 @@ const WatchingContainer = ({ data = [], slug }) => {
   const Myref = useRef(null);
   const { theme, loading, resumeId } = useSelector((state) => state);
   const [link, setLink] = useState("");
-  var [url1, setUrl] = useState("");
   const [myList, setMyList] = useState([]);
   const [iframe, setIframe] = useState(false);
   const dispatch = useDispatch();
@@ -60,13 +59,7 @@ const WatchingContainer = ({ data = [], slug }) => {
 
     if (data.links?.length > 0) {
       setMyList([...data.links]);
-      setLink(data); 
-      if ((data = "not existing")) {
-        setUrl("data");
-      } else {
-        setUrl(data);
-      }
-
+      setLink(data);
 
       if (
         Myref.current &&
@@ -85,11 +78,11 @@ const WatchingContainer = ({ data = [], slug }) => {
         );
       }, 5000);
     } else {
-      setLink(data);
+      setLink(data.link);
       setIframe(true);
     }
     return () => clearInterval(myInterval);
-  }, [data]);
+  }, [data.links]);
 
   const handleClick = (rate) => {
     Myref.current.playbackRate = rate;
@@ -128,7 +121,7 @@ const WatchingContainer = ({ data = [], slug }) => {
               }}
               button={theme.button}
               className={`h-11 cursor-pointer outline-none border ${theme.border.selected} rounded-full ${theme.button.background} border ${theme.button.text} ${theme.button.border} shadow-2xl transition-all duration-500`}
-             
+              value={link}
               theme={theme}
             >
               {myList.map((item, index) => {
@@ -149,9 +142,7 @@ const WatchingContainer = ({ data = [], slug }) => {
       <div className="flex w-full justify-center items-center flex-col-reverse lg:flex-row">
         {iframe ? (
           <iframe
-            src={
-              url1
-            }
+            src={data}
             className=" max-w-full lg:max-w-screen-lg"
             sandbox
             width={1024}
@@ -178,7 +169,7 @@ const WatchingContainer = ({ data = [], slug }) => {
             </div>
 
             <video
-              src={url1}
+              src={data}
               width="1024"
               autoPlay
               height="576"
